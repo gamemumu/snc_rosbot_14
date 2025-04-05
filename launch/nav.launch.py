@@ -21,7 +21,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(snc_rosbot_14_dir, 'config', 'navigation.yaml'),
+        default_value=os.path.join(snc_rosbot_14_dir, 'config', 'navigation_pro3.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes',
     )
 
@@ -39,6 +39,7 @@ def generate_launch_description():
             'params_file': params_file,
             'slam': use_slam,
             'use_sim_time': use_sim_time,
+            'map':''
         }.items(),
     )
     ld = LaunchDescription()

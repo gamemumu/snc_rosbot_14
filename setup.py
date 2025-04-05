@@ -37,6 +37,9 @@ setup(
             f"publish_navpath = {package_name}.publish_navpath:main",
             f"transform = {package_name}.transform:main",
             f"waypoint = {package_name}.waypoint:main",
+            f"nav_logic = {package_name}.nav_logic:main",
+            f'path_tracker = {package_name}.path_tracker:main',
+
         ],
     },
 )
